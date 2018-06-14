@@ -33,17 +33,23 @@ public class JoinOur extends JavaPlugin {
             pluginManager.addPermission(permission);
         }
 
-        getCommand("reload").setExecutor(new CommandExecutor() {
+        getCommand("joinour").setExecutor(new CommandExecutor() {
             public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
                 if (sender.hasPermission(joinourAdmin)) {
-                    sender.sendMessage(ChatColor.GREEN + "Attempting to reload the configuration file.");
-                    reloadConfig();
-                    sender.sendMessage(ChatColor.GREEN + "Succesfully reloaded the config.");
+                    switch (args[0]) {
+                        case "reload":
+                            sender.sendMessage(ChatColor.GREEN + "Attempting to reload the configuration file.");
+                            reloadConfig();
+                            sender.sendMessage(ChatColor.GREEN + "Succesfully reloaded the config.");
+                            return true;
+                        default:
+                            sender.sendMessage(ChatColor.RED + "Subcommand not found.");
+                            return false;
+                    }
                 } else {
                     sender.sendMessage(noPermission);
                     return true;
                 }
-                return false;
             }
         });
     }

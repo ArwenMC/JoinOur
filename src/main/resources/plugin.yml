@@ -2,3 +2,7 @@ name: JoinOur
 version: 0.1
 author: ArwenMC
 authors: ["Thorin"]
+commands:
+  joinour:
+    usage: /joinour reload
+    description: Reload the configuration the config withour reloading the entire server.
