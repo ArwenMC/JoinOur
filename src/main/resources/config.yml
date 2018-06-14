@@ -1,4 +1,5 @@
-# JoinOur
+# JoinOur Configuration File
+# Text is colourable with Essentials colour codes (&)
 messages:
   general:
     no_permission: "&cYou do not have permission to use this command."
