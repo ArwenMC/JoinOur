@@ -9,3 +9,5 @@ enabled_commands:
   discord: true
   forums: true
   twitter: true
+other:
+  disable_command_send_no_permission: false # If a command is disabled would you want to send the command disabled message or that the player doesn't have permission.
