@@ -15,7 +15,7 @@ public class DiscordCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String label, String[] args) {
         if (plugin.getConfig().getBoolean("enabled_commands.discord")) {
-
+            if
         } else {
 
         }

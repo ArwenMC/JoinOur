@@ -1,5 +1,6 @@
 package com.arwenmc;
 
+import com.arwenmc.commands.DiscordCommand;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
