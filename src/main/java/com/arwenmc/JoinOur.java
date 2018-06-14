@@ -21,8 +21,8 @@ public class JoinOur extends JavaPlugin {
             joinourAdmin
     };
 
-    public String noPermission = ChatColor.translateAlternateColorCodes('&', this.config.getString("messages.no_permission"));
-    public String notPlayer = ChatColor.translateAlternateColorCodes('&', this.config.getString("messages.not_player"));
+    public String noPermission = ChatColor.translateAlternateColorCodes('&', this.config.getString("messages.general.no_permission"));
+    public String notPlayer = ChatColor.translateAlternateColorCodes('&', this.config.getString("messages.general.not_player"));
 
     @Override
     public void onEnable() {
@@ -41,7 +41,7 @@ public class JoinOur extends JavaPlugin {
                         case "reload":
                             sender.sendMessage(ChatColor.GREEN + "Attempting to reload the configuration file.");
                             reloadConfig();
-                            sender.sendMessage(ChatColor.GREEN + "Succesfully reloaded the config.");
+                            sender.sendMessage(ChatColor.GREEN + "Successfully reloaded the config.");
                             return true;
                         default:
                             sender.sendMessage(ChatColor.RED + "Subcommand not found.");
