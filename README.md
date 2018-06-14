@@ -1,6 +1,6 @@
 # JoinOur
 Tired of posting your discord, website, twitter link whenever someone asks?  
-This plugin solves that problem!  
+This plugin solves that problem! Always having players ask "Where can I join our Discord?", this plugin will do that for you.
 **This plugin requires Spigot due to ChatClickEvents**
 
 ## Features
