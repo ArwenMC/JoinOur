@@ -2,3 +2,10 @@
 messages:
   no_permission: "&cYou do not have permission to use this command."
   not_player: "&cYou must be a player to use this command."
+  command_disabled: "&cThat command has been disabled by the server owner"
+enabled_commands:
+  website: true
+  apply: true # apply for staff
+  discord: true
+  forums: true
+  twitter: true
