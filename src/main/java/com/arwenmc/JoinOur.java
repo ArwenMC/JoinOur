@@ -12,7 +12,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class JoinOur extends JavaPlugin {
 
-    FileConfiguration config = this.getConfig();
     PluginManager pluginManager = this.getServer().getPluginManager();
 
     public Permission joinourAdmin = new Permission("joinour.admin");
@@ -23,6 +22,7 @@ public class JoinOur extends JavaPlugin {
 
     public String noPermission = ChatColor.translateAlternateColorCodes('&', this.config.getString("messages.general.no_permission"));
     public String notPlayer = ChatColor.translateAlternateColorCodes('&', this.config.getString("messages.general.not_player"));
+    public String commandDisabled = ChatColor.translateAlternateColorCodes('&', this.config.getString("messages.command_disabled"));
 
     @Override
     public void onEnable() {

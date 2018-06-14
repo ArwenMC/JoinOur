@@ -5,18 +5,23 @@ messages:
     not_player: "&cYou must be a player to use this command."
     command_disabled: "&cThat command has been disabled by the server owner"
   website:
+    chat: "Our Website"
     link: "https://example.com"
     hover_text: "&bVisit our website!"
   apply:
+    chat: "Join our staff coordinator"
     link: "https://example.com/apply"
     hover_text: "&bApply for Staff!"
   discord:
+    chat: "Come and join our discord."
     link: "https://example.com"
     hover_text: "&bChat on our Discord"
   forums:
+    chat: "Come and join us on our forums."
     link: "https://example.com"
     hover_text: "&bChat on our forums!"
   twitter:
+    chat: "We are on Twitter, did you know?"
     link: "https://example.com"
     hover_text: "&bFollow us, but please not in real life."
 enabled_commands:
