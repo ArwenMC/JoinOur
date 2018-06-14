@@ -4,5 +4,5 @@ author: ArwenMC
 authors: ["Thorin"]
 commands:
   joinour:
-    usage: /joinour reload
+    usage: /joinour <reload>
     description: Reload the configuration the config withour reloading the entire server.
