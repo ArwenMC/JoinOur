@@ -1,7 +1,7 @@
 package com.arwenmc;
 
+import com.arwenmc.commands.DiscordCommand;
 import net.md_5.bungee.api.ChatColor;
-import net.md_5.bungee.api.chat.BaseComponent;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -53,6 +53,8 @@ public class JoinOur extends JavaPlugin {
                 }
             }
         });
+
+        getCommand("discord").setExecutor(new DiscordCommand(this));
     }
 
     @Override
