@@ -33,3 +33,4 @@ enabled_commands:
   twitter: true
 other:
   disable_command_send_no_permission: false # If a command is disabled would you want to send the command disabled message or that the player doesn't have permission.
+  commands_require_permissions: false
