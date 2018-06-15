@@ -23,10 +23,10 @@ public class DiscordCommand implements CommandExecutor {
         if (plugin.getConfig().getBoolean("enabled_commands.discord")) {
             if (commandSender instanceof Player) {
                 Player player = (Player) commandSender;
-                TextComponent discordMSG = new TextComponent(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("messages.discord.chat"));
+                TextComponent discordMSG = new TextComponent(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("messages.discord.chat")));
                 discordMSG.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, plugin.getConfig().getString("messages.discord.link")));
                 discordMSG.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("messages.discord.hover_text"))).create()));
-                commandSender.spigot().sendMessage(discordMSG);
+                player.spigot().sendMessage(discordMSG);
             } else {
                 commandSender.sendMessage(plugin.notPlayer);
             }
@@ -39,6 +39,5 @@ public class DiscordCommand implements CommandExecutor {
             }
             return true;
         }
-        return false;
     }
 }
