@@ -12,6 +12,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class JoinOur extends JavaPlugin {
 
+    FileConfiguration config = this.getConfig();
     PluginManager pluginManager = this.getServer().getPluginManager();
 
     public Permission joinourAdmin = new Permission("joinour.admin");
