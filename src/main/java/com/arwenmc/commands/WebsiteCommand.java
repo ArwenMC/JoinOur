@@ -25,10 +25,10 @@ public class WebsiteCommand implements CommandExecutor{
             if (plugin.getConfig().getBoolean("enabled_commands.website")) {
                 if (commandSender instanceof Player) {
                     Player player = (Player) commandSender;
-                    TextComponent discordMSG = new TextComponent(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("messages.website.chat")));
-                    discordMSG.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, plugin.getConfig().getString("messages.website.link")));
-                    discordMSG.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("messages.website.hover_text"))).create()));
-                    player.spigot().sendMessage(discordMSG);
+                    TextComponent websiteMSG = new TextComponent(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("messages.website.chat")));
+                    websiteMSG.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, plugin.getConfig().getString("messages.website.link")));
+                    websiteMSG.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("messages.website.hover_text"))).create()));
+                    player.spigot().sendMessage(websiteMSG);
                 } else {
                     commandSender.sendMessage(plugin.notPlayer);
                 }
