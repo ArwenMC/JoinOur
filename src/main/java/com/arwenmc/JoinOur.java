@@ -1,7 +1,6 @@
 package com.arwenmc;
 
-import com.arwenmc.commands.DiscordCommand;
-import com.arwenmc.commands.WebsiteCommand;
+import com.arwenmc.commands.*;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -58,6 +57,9 @@ public class JoinOur extends JavaPlugin {
 
         getCommand("discord").setExecutor(new DiscordCommand(this));
         getCommand("website").setExecutor(new WebsiteCommand(this));
+        getCommand("apply").setExecutor(new ApplyCommand(this));
+        getCommand("forums").setExecutor(new ForumsCommand(this));
+        getCommand("twitter").setExecutor(new TwitterCommand(this));
 
     }
 
